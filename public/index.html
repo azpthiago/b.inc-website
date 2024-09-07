@@ -11,10 +11,85 @@
 
 <body>
   <div class="bg-zinc-900 h-screen">
-    <div class="w-full h-full flex items-center justify-center">
-      <p class="text-zinc-50">Start Project</p>
-    </div>
+    <nav class="relative px-4 py-4 flex justify-between items-center bg-white">
+      <a class="text-3xl font-bold leading-none" href="#">
+        B.Inc
+      </a>
+      <div class="lg:hidden">
+        <button class="navbar-burger flex items-center text-blue-600 p-3">
+          <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <title>Mobile menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+          </svg>
+        </button>
+      </div>
+      <ul
+        class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
+        <li class="relative group">
+          <a class="text-sm text-blue-400 group-hover:text-gray-200 group-hover:bg-slate-800 hover:bg-slate-800 p-2 rounded-lg transition-all"
+            href="#">Lançamento</a>
+          <!-- Dropdown content for "Lançamento" -->
+          <div class="absolute hidden group-hover:block bg-gray-100 p-4 shadow-lg rounded-md min-w-[200px] mt-2 z-10">
+            <ul>
+              <li><a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-200 rounded-md">Eletrik Park</a></li>
+              <li><a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-200 rounded-md">Skate</a></li>
+              <li><a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-200 rounded-md">Mad Brillance</a></li>
+              <li><a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-200 rounded-md">Seleção Brasileira</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="relative group">
+          <a class="text-sm text-gray-400 group-hover:text-gray-200 group-hover:bg-slate-800 hover:bg-slate-800 p-2 rounded-lg transition-all"
+            href="#">Ofertas</a>
+          <!-- Dropdown content for "Ofertas" -->
+          <div class="absolute hidden group-hover:block bg-gray-100 p-4 shadow-lg rounded-md min-w-[200px] mt-2 z-10">
+            <ul>
+              <li><a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-200 rounded-md">Desconto 1</a></li>
+              <li><a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-200 rounded-md">Desconto 2</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="relative group">
+          <a class="text-sm text-gray-400 group-hover:text-gray-200 group-hover:bg-slate-800 hover:bg-slate-800 p-2 rounded-lg transition-all"
+            href="#">Masculino</a>
+          <!-- Dropdown content for "Masculino" -->
+          <div class="absolute hidden group-hover:block bg-gray-100 p-4 shadow-lg rounded-md min-w-[200px] mt-2 z-10">
+            <ul>
+              <li><a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-200 rounded-md">Roupas</a></li>
+              <li><a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-200 rounded-md">Acessórios</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="relative group">
+          <a class="text-sm text-gray-400 group-hover:text-gray-200 group-hover:bg-slate-800 hover:bg-slate-800 p-2 rounded-lg transition-all"
+            href="#">Feminino</a>
+          <!-- Dropdown content for "Feminino" -->
+          <div class="absolute hidden group-hover:block bg-gray-100 p-4 shadow-lg rounded-md min-w-[200px] mt-2 z-10">
+            <ul>
+              <li><a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-200 rounded-md">Roupas</a></li>
+              <li><a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-200 rounded-md">Acessórios</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="relative group">
+          <a class="text-sm text-gray-400 group-hover:text-gray-200 group-hover:bg-slate-800 hover:bg-slate-800 p-2 rounded-lg transition-all"
+            href="#">Infantil</a>
+          <!-- Dropdown content for "Infantil" -->
+          <div class="absolute hidden group-hover:block bg-gray-100 p-4 shadow-lg rounded-md min-w-[200px] mt-2 z-10">
+            <ul>
+              <li><a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-200 rounded-md">Brinquedos</a></li>
+              <li><a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-200 rounded-md">Roupas</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- TO DO:Ajustar navbar mobile que o código original esta no GPT -->
   </div>
+
+  <script src="/public/js/navbar.js"></script>
 </body>
 
 </html>

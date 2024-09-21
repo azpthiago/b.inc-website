@@ -11,7 +11,7 @@
 
 <body>
   <div class="bg-zinc-900 h-screen">
-    <nav class="relative px-4 py-4 flex justify-between items-center bg-white">
+    <nav class="relative px-60 py-4 flex justify-between items-center bg-white z-20">
       <a class="text-3xl font-bold leading-none" href="#">
         B.Inc
       </a>
@@ -87,9 +87,34 @@
     </nav>
 
     <!-- TO DO:Ajustar navbar mobile que o código original esta no GPT -->
-  </div>
 
+    <!-- Slideshow -->
+    <div class="flex justify-center w-full items-center flex-grow py-12 -z-10">
+      <div class="relative w-10/12 max-w-4xl h-[50vh] overflow-hidden bg-gray-800 rounded-lg">
+        <div id="slideshow" class="flex transition-transform duration-500">
+          <div class="flex-shrink-0 w-full h-[750px]">
+            <img src="/public/images/imagem1.jpg" alt="Imagem 1" class="w-full h-full object-cover" />
+          </div>
+          <div class="flex-shrink-0 w-full h-[750px]">
+            <img src="/public/images/imagem2.webp" alt="Imagem 2" class="w-full h-full object-cover" />
+          </div>
+          <div class="flex-shrink-0 w-full h-[750px]">
+            <img src="/public/images/imagem3.avif" alt="Imagem 3" class="w-full h-full object-cover" />
+          </div>
+        </div>
+        <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+          <button class="w-3 h-3 rounded-full bg-white shadow-lg" onclick="changeSlide(0)"></button>
+          <button class="w-3 h-3 rounded-full bg-white shadow-lg" onclick="changeSlide(1)"></button>
+          <button class="w-3 h-3 rounded-full bg-white shadow-lg" onclick="changeSlide(2)"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Slideshow -->
+
+  </div>
   <script src="/public/js/navbar.js"></script>
+  <script src="/public/js/slideshow.js"></script>
 </body>
 
 </html>

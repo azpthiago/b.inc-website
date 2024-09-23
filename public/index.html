@@ -9,9 +9,11 @@
   <title>B.inc</title>
 </head>
 
-<body>
-  <div class="bg-zinc-900 h-screen">
-    <nav class="relative px-60 py-4 flex justify-between items-center bg-white z-20">
+<body class="pb-12 font-['Inter']">
+  <div class="">
+    <!--NavBar-->
+
+    <nav class="relative px-6 md:px-60 py-4 flex justify-between items-center bg-white z-20">
       <a class="text-3xl font-bold leading-none" href="#">
         B.Inc
       </a>
@@ -24,7 +26,7 @@
         </button>
       </div>
       <ul
-        class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
+        class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
         <li class="relative group">
           <a class="text-sm text-blue-400 group-hover:text-gray-200 group-hover:bg-slate-800 hover:bg-slate-800 p-2 rounded-lg transition-all"
             href="#">Lançamento</a>
@@ -85,12 +87,64 @@
         </li>
       </ul>
     </nav>
+    <div class="navbar-menu relative z-50 hidden">
+      <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+      <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
+        <div class="flex items-center mb-8">
+          <a class="mr-auto text-3xl font-bold leading-none" href="#">
+            B.Inc
+          </a>
+          <button class="navbar-close">
+            <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg"
+              fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+        <div>
+          <ul>
+            <li class="mb-1">
+              <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                href="#">Home</a>
+            </li>
+            <li class="mb-1">
+              <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                href="#">About Us</a>
+            </li>
+            <li class="mb-1">
+              <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                href="#">Services</a>
+            </li>
+            <li class="mb-1">
+              <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                href="#">Pricing</a>
+            </li>
+            <li class="mb-1">
+              <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mt-auto">
+          <div class="pt-6">
+            <a class="block px-4 py-3 mb-3 text-xs text-center font-semibold leading-none bg-gray-50 hover:bg-gray-100 rounded-xl"
+              href="#">Entrar</a>
+            <a class="block px-4 py-3 mb-2 text-xs text-center text-white font-semibold bg-blue-600 hover:bg-blue-700  rounded-xl"
+              href="#">Registrar-se</a>
+          </div>
+          <p class="my-4 text-xs text-center text-gray-400">
+            <span>Copyright Thiago Paz © 2024</span>
+          </p>
+        </div>
+      </nav>
+    </div>
 
-    <!-- TO DO:Ajustar navbar mobile que o código original esta no GPT -->
+    <!--NavBar-->
 
     <!-- Slideshow -->
-    <div class="flex justify-center w-full items-center flex-grow py-12 -z-10">
-      <div class="relative w-10/12 max-w-4xl h-[50vh] overflow-hidden bg-gray-800 rounded-lg">
+
+    <div class="flex justify-center w-full items-center flex-grow py-8 -z-10">
+      <div class="relative w-10/12 max-w-7xl h-[50vh] overflow-hidden bg-gray-800 rounded-lg">
         <div id="slideshow" class="flex transition-transform duration-500">
           <div class="flex-shrink-0 w-full h-[750px]">
             <img src="/public/images/imagem1.jpg" alt="Imagem 1" class="w-full h-full object-cover" />
@@ -110,7 +164,52 @@
       </div>
     </div>
   </div>
+
   <!-- Slideshow -->
+
+  <!-- Card de itens -->
+
+  <div class="flex flex-col md:flex-row justify-center items-center gap-6">
+    <p class="text-center font-['Inter'] font-bold text-3xl"> Destaques </p>
+
+    <div
+      class="w-10/12  max-w-sm bg-neutral-100 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+      <a href="#">
+        <img class="p-8 rounded-t-lg" src="/public/images/af1.png" alt="product image" />
+      </a>
+      <div class="px-5 pb-5">
+        <a href="#">
+          <h5 class="text-xl text-center font-semibold tracking-tight text-gray-900 dark:text-white">Air Force</h5>
+        </a>
+      </div>
+    </div>
+
+    <div
+      class="w-10/12  max-w-sm bg-neutral-100 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+      <a href="#">
+        <img class="p-8 rounded-t-lg" src="/public/images/dunkLow.png" alt="product image" />
+      </a>
+      <div class="px-5 pb-5">
+        <a href="#">
+          <h5 class="text-xl text-center font-semibold tracking-tight text-gray-900 dark:text-white">Dunk Low</h5>
+        </a>
+      </div>
+    </div>
+
+    <div
+      class="w-10/12  max-w-sm bg-neutral-100 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+      <a href="#">
+        <img class="p-8 rounded-t-lg" src="/public/images/airJodan1.png" alt="product image" />
+      </a>
+      <div class="px-5 pb-5">
+        <a href="#">
+          <h5 class="text-xl text-center font-semibold tracking-tight text-gray-900 dark:text-white">Air Jordan</h5>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card de itens -->
 
   </div>
   <script src="/public/js/navbar.js"></script>

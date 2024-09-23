@@ -10,10 +10,9 @@
 </head>
 
 <body class="pb-12 font-['Inter']">
-  <div class="">
-    <!--NavBar-->
-
-    <nav class="relative px-6 md:px-60 py-4 flex justify-between items-center bg-white z-20">
+  <div> <!--NavBar-->
+    <nav class="w-full relative px-6 md:px-40 py-4 flex justify-between items-center bg-white z-20">
+      <!-- Navbar Desktop -->
       <a class="text-3xl font-bold leading-none" href="#">
         B.Inc
       </a>
@@ -35,8 +34,10 @@
             <ul>
               <li><a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-200 rounded-md">Eletrik Park</a></li>
               <li><a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-200 rounded-md">Skate</a></li>
-              <li><a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-200 rounded-md">Mad Brillance</a></li>
-              <li><a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-200 rounded-md">Seleção Brasileira</a>
+              <li><a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-200 rounded-md">Mad Brillance</a>
+              </li>
+              <li><a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-200 rounded-md">Seleção
+                  Brasileira</a>
               </li>
             </ul>
           </div>
@@ -87,7 +88,7 @@
         </li>
       </ul>
     </nav>
-    <div class="navbar-menu relative z-50 hidden">
+    <div class="navbar-menu relative z-50 hidden"> <!--NavBar Mobile-->
       <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
       <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
         <div class="flex items-center mb-8">
@@ -104,32 +105,32 @@
         <div>
           <ul>
             <li class="mb-1">
-              <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+              <a class="block p-4 text-sm font-bold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
                 href="#">Home</a>
             </li>
             <li class="mb-1">
-              <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+              <a class="block p-4 text-sm font-bold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
                 href="#">About Us</a>
             </li>
             <li class="mb-1">
-              <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+              <a class="block p-4 text-sm font-bold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
                 href="#">Services</a>
             </li>
             <li class="mb-1">
-              <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+              <a class="block p-4 text-sm font-bold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
                 href="#">Pricing</a>
             </li>
             <li class="mb-1">
-              <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+              <a class="block p-4 text-sm font-bold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
                 href="#">Contact</a>
             </li>
           </ul>
         </div>
         <div class="mt-auto">
           <div class="pt-6">
-            <a class="block px-4 py-3 mb-3 text-xs text-center font-semibold leading-none bg-gray-50 hover:bg-gray-100 rounded-xl"
+            <a class="block px-4 py-3 mb-3 text-xs text-center font-bold leading-none bg-gray-50 hover:bg-gray-100 rounded-xl"
               href="#">Entrar</a>
-            <a class="block px-4 py-3 mb-2 text-xs text-center text-white font-semibold bg-blue-600 hover:bg-blue-700  rounded-xl"
+            <a class="block px-4 py-3 mb-2 text-xs text-center text-white font-bold bg-blue-600 hover:bg-blue-700  rounded-xl"
               href="#">Registrar-se</a>
           </div>
           <p class="my-4 text-xs text-center text-gray-400">
@@ -137,14 +138,15 @@
           </p>
         </div>
       </nav>
+      <!--NavBar Mobile-->
     </div>
 
-    <!--NavBar-->
+  </div> <!--NavBar-->
 
-    <!-- Slideshow -->
+  <div class="w-full flex flex-col items-center justify-center"> <!-- Wrapper Body -->
 
-    <div class="flex justify-center w-full items-center flex-grow py-8 -z-10">
-      <div class="relative w-10/12 max-w-7xl h-[50vh] overflow-hidden bg-gray-800 rounded-lg">
+    <div class="flex justify-center items-center w-11/12  flex-grow py-8"> <!-- Slideshow -->
+      <div class="relative w-11/12 h-[50vh] overflow-hidden bg-gray-800 rounded-lg z-10">
         <div id="slideshow" class="flex transition-transform duration-500">
           <div class="flex-shrink-0 w-full h-[750px]">
             <img src="/public/images/imagem1.jpg" alt="Imagem 1" class="w-full h-full object-cover" />
@@ -156,62 +158,63 @@
             <img src="/public/images/imagem3.avif" alt="Imagem 3" class="w-full h-full object-cover" />
           </div>
         </div>
-        <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
-          <button class="w-3 h-3 rounded-full bg-white shadow-lg" onclick="changeSlide(0)"></button>
-          <button class="w-3 h-3 rounded-full bg-white shadow-lg" onclick="changeSlide(1)"></button>
-          <button class="w-3 h-3 rounded-full bg-white shadow-lg" onclick="changeSlide(2)"></button>
+        <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 z-20">
+          <button class="w-3 h-3 rounded-full bg-white shadow-lg hover:cursor-pointer"
+            onclick="changeSlide(0)"></button>
+          <button class="w-3 h-3 rounded-full bg-white shadow-lg hover:cursor-pointer"
+            onclick="changeSlide(1)"></button>
+          <button class="w-3 h-3 rounded-full bg-white shadow-lg hover:cursor-pointer"
+            onclick="changeSlide(2)"></button>
         </div>
       </div>
-    </div>
-  </div>
+    </div> <!-- Slideshow -->
 
-  <!-- Slideshow -->
+    <div class="w-11/12 flex flex-col items-center justify-center gap-8"> <!-- Card de itens -->
+      <p class="text-center font-['Inter'] font-bold text-3xl"> Destaques </p>
+      <div class="w-11/12 flex flex-col md:flex-row justify-around items-center">
 
-  <!-- Card de itens -->
+        <div
+          class="w-full max-w-sm sm:max-w-md flex items-center justify-center flex-col bg-neutral-100 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+          <a href="#">
+            <img class="p-8 rounded-t-lg" src="/public/images/af1.png" alt="product image" />
+          </a>
+          <div class="px-5 pb-5">
+            <a href="#">
+              <h5 class="text-xl text-center font-bold tracking-tight text-gray-900 dark:text-white">Air Force</h5>
+            </a>
+          </div>
+        </div>
 
-  <div class="flex flex-col md:flex-row justify-center items-center gap-6">
-    <p class="text-center font-['Inter'] font-bold text-3xl"> Destaques </p>
+        <div
+          class="w-full max-w-sm sm:max-w-md flex items-center justify-center flex-col bg-neutral-100 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+          <a href="#">
+            <img class="p-8 rounded-t-lg" src="/public/images/dunkLow.png" alt="product image" />
+          </a>
+          <div class="px-5 pb-5">
+            <a href="#">
+              <h5 class="text-xl text-center font-bold tracking-tight text-gray-900 dark:text-white">Dunk Low</h5>
+            </a>
+          </div>
+        </div>
 
-    <div
-      class="w-10/12  max-w-sm bg-neutral-100 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-      <a href="#">
-        <img class="p-8 rounded-t-lg" src="/public/images/af1.png" alt="product image" />
-      </a>
-      <div class="px-5 pb-5">
-        <a href="#">
-          <h5 class="text-xl text-center font-semibold tracking-tight text-gray-900 dark:text-white">Air Force</h5>
-        </a>
+        <div
+          class="w-full max-w-sm sm:max-w-md flex items-center justify-center flex-col bg-neutral-100 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+          <a href="#">
+            <img class="p-8 rounded-t-lg" src="/public/images/airJodan1.png" alt="product image" />
+          </a>
+          <div class="px-5 pb-5">
+            <a href="#">
+              <h5 class="text-xl text-center font-bold tracking-tight text-gray-900 dark:text-white">Air Jordan</h5>
+            </a>
+          </div>
+        </div>
+
+
       </div>
-    </div>
+    </div> <!-- Card de itens -->
 
-    <div
-      class="w-10/12  max-w-sm bg-neutral-100 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-      <a href="#">
-        <img class="p-8 rounded-t-lg" src="/public/images/dunkLow.png" alt="product image" />
-      </a>
-      <div class="px-5 pb-5">
-        <a href="#">
-          <h5 class="text-xl text-center font-semibold tracking-tight text-gray-900 dark:text-white">Dunk Low</h5>
-        </a>
-      </div>
-    </div>
+  </div> <!-- Wrapper Body -->
 
-    <div
-      class="w-10/12  max-w-sm bg-neutral-100 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-      <a href="#">
-        <img class="p-8 rounded-t-lg" src="/public/images/airJodan1.png" alt="product image" />
-      </a>
-      <div class="px-5 pb-5">
-        <a href="#">
-          <h5 class="text-xl text-center font-semibold tracking-tight text-gray-900 dark:text-white">Air Jordan</h5>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Card de itens -->
-
-  </div>
   <script src="/public/js/navbar.js"></script>
   <script src="/public/js/slideshow.js"></script>
 </body>

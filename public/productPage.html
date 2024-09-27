@@ -15,7 +15,7 @@
   <title>B.inc</title>
 </head>
 
-<body class="font-['Inter'] scroll-smooth">
+<body class="font-['Inter'] scroll-smooth md:ml-32">
 
   <!-- Navbar -->
   <nav class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700 z-40">
@@ -24,7 +24,7 @@
       <!-- Nome Empresa -->
       <div class="md:mr-auto">
         <a href="/public/index.html"><span
-            class="text-2xl font-semibold whitespace-nowrap dark:text-white">B.Inc</span></a>
+            class="text-2xl font-extrabold whitespace-nowrap dark:text-white">B.Inc</span></a>
       </div>
 
       <!-- Botão Mobile -->
@@ -112,7 +112,7 @@
                 </div>
                 <input type="search" id="default-search"
                   class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-neutral-200 focus:border-neutral-200 dark:bg-neutral-700 dark:border-neutral-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-neutral-200 dark:focus:border-neutral-200"
-                  placeholder="Oque deseja?" required />
+                  placeholder="O que deseja?" required />
               </div>
             </form>
           </li>
@@ -144,7 +144,7 @@
       <p class="font-bold text-zinc-600/40 pb-2">Filtros</p>
     </div>
 
-    <form class="max-w-md px-10 md:hidden">
+    <form class="max-w-md pr-10 md:hidden">
       <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
       <div class="relative">
         <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
@@ -162,7 +162,7 @@
   </div>
 
   <aside id="sidebar-multi-level-sidebar"
-    class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
+    class="fixed top-0 left-0 z-40 w-64 md:w-80 h-screen transition-transform -translate-x-full sm:translate-x-0"
     aria-label="Sidebar">
     <div class="h-full px-3 py-4 md:pt-20 overflow-y-auto bg-gray-50 dark:bg-gray-800">
       <ul class="space-y-2 font-medium">
@@ -310,8 +310,7 @@
   <div class="max-w-screen-xl flex flex-wrap items-center justify-center mx-auto">
     <!-- Galeria de produtos -->
     <div class="grid grid-cols-2 md:grid-cols-3 gap-4 w-10/12 pt-4">
-
-      <!-- Item -->
+      <!-- Item com desconto -->
       <div class="hover:scale-[102%] transition-all ease-in-out h-80 hover:cursor-pointer">
         <div class="relative h-80">
           <img class="object-cover h-full w-full max-w-full rounded-lg"
@@ -320,7 +319,7 @@
             class="absolute inset-0 bg-gradient-to-t from-zinc-800 via-transparent to-transparent rounded-lg hover:cursor-pointer">
           </div>
         </div>
-        <div class="relative -top-[300px] pl-3 pr-4 md:pl-5 flex flex-col gap-52 md:gap-44">
+        <div class="relative -top-[300px] pl-3 pr-4 md:pl-5 flex flex-col gap-44 md:gap-50">
           <p class="text-neutral-700 font-bold text-sm md:text-xl w-full text-wrap h-10">Tênis Vomero 17 Masculino
           </p>
           <div class="h-10 w-full">
@@ -330,9 +329,9 @@
           </div>
         </div>
       </div>
-      <!-- Item -->
+      <!-- Item com desconto -->
 
-      <!-- Item -->
+      <!-- Item com desconto -->
       <div class="hover:scale-[102%] transition-all ease-in-out h-80 hover:cursor-pointer">
         <div class="relative h-80">
           <img class="object-cover h-full w-full max-w-full rounded-lg"
@@ -341,7 +340,7 @@
             class="absolute inset-0 bg-gradient-to-t from-zinc-800 via-transparent to-transparent rounded-lg hover:cursor-pointer">
           </div>
         </div>
-        <div class="relative -top-[300px] pl-3 pr-4 md:pl-5 flex flex-col gap-52 md:gap-44">
+        <div class="relative -top-[300px] pl-3 pr-4 md:pl-5 flex flex-col gap-44 md:gap-50">
           <p class="text-neutral-700 font-bold text-sm md:text-xl w-full text-wrap h-10">Tênis Nike Dunk Low
           </p>
           <div class="h-10 w-full">
@@ -351,9 +350,9 @@
           </div>
         </div>
       </div>
-      <!-- Item -->
+      <!-- Item com desconto -->
 
-      <!-- Item -->
+      <!-- Item com desconto -->
       <div class="hover:scale-[102%] transition-all ease-in-out h-80 hover:cursor-pointer">
         <div class="relative h-80">
           <img class="object-cover h-full w-full max-w-full rounded-lg"
@@ -362,7 +361,7 @@
             class="absolute inset-0 bg-gradient-to-t from-zinc-800 via-transparent to-transparent rounded-lg hover:cursor-pointer">
           </div>
         </div>
-        <div class="relative -top-[300px] pl-3 pr-4 md:pl-5 flex flex-col gap-52 md:gap-44">
+        <div class="relative -top-[300px] pl-3 pr-4 md:pl-5 flex flex-col gap-44 md:gap-50">
           <p class="text-neutral-700 font-bold text-sm md:text-xl w-full text-wrap h-10">Tênis Nike Air Force 1 '07 LV8
             Masculino
           </p>
@@ -373,9 +372,9 @@
           </div>
         </div>
       </div>
-      <!-- Item -->
+      <!-- Item com desconto -->
 
-      <!-- Item -->
+      <!-- Item com desconto -->
       <div class="hover:scale-[102%] transition-all ease-in-out h-80 hover:cursor-pointer">
         <div class="relative h-80">
           <img class="object-cover h-full w-full max-w-full rounded-lg"
@@ -384,9 +383,8 @@
             class="absolute inset-0 bg-gradient-to-t from-zinc-800 via-transparent to-transparent rounded-lg hover:cursor-pointer">
           </div>
         </div>
-        <div class="relative -top-[300px] pl-3 pr-4 md:pl-5 flex flex-col gap-52 md:gap-44">
+        <div class="relative -top-[300px] pl-3 pr-4 md:pl-5 flex flex-col gap-44 md:gap-50">
           <p class="text-neutral-700 font-bold text-sm md:text-xl w-full text-wrap h-10">Tenis Nike Air Max 90 LTR
-            Masculino
             Masculino
           </p>
           <div class="h-10 w-full">
@@ -396,9 +394,9 @@
           </div>
         </div>
       </div>
-      <!-- Item -->
+      <!-- Item com desconto -->
 
-      <!-- Item -->
+      <!-- Item com desconto -->
       <div class="hover:scale-[102%] transition-all ease-in-out h-80 hover:cursor-pointer">
         <div class="relative h-80">
           <img class="object-cover h-full w-full max-w-full rounded-lg"
@@ -407,8 +405,8 @@
             class="absolute inset-0 bg-gradient-to-t from-zinc-800 via-transparent to-transparent rounded-lg hover:cursor-pointer">
           </div>
         </div>
-        <div class="relative -top-[300px] pl-3 pr-4 md:pl-5 flex flex-col gap-52 md:gap-44">
-          <p class="text-neutral-700 font-bold text-sm md:text-xl w-full text-wrap h-10">Tenis Nike Infinity Run
+        <div class="relative -top-[300px] pl-3 pr-4 md:pl-5 flex flex-col gap-44 md:gap-50">
+          <p class="text-neutral-700 font-bold text-sm md:text-xl w-full text-wrap h-10">Tênis Nike Infinity Run
             Masculino
           </p>
           <div class="h-10 w-full">
@@ -418,9 +416,9 @@
           </div>
         </div>
       </div>
-      <!-- Item -->
+      <!-- Item com desconto -->
 
-      <!-- Item -->
+      <!-- Item com desconto -->
       <div class="hover:scale-[102%] transition-all ease-in-out h-80 hover:cursor-pointer">
         <div class="relative h-80">
           <img class="object-cover h-full w-full max-w-full rounded-lg"
@@ -429,8 +427,8 @@
             class="absolute inset-0 bg-gradient-to-t from-zinc-800 via-transparent to-transparent rounded-lg hover:cursor-pointer">
           </div>
         </div>
-        <div class="relative -top-[300px] pl-3 pr-4 md:pl-5 flex flex-col gap-52 md:gap-44">
-          <p class="text-neutral-700 font-bold text-sm md:text-xl w-full text-wrap h-10">Tenis Nike Versair
+        <div class="relative -top-[300px] pl-3 pr-4 md:pl-5 flex flex-col gap-44 md:gap-50">
+          <p class="text-neutral-700 font-bold text-sm md:text-xl w-full text-wrap h-10">Tênis Nike Versair
             Feminino
           </p>
           <div class="h-10 w-full">
@@ -440,9 +438,9 @@
           </div>
         </div>
       </div>
-      <!-- Item -->
+      <!-- Item com desconto -->
 
-      <!-- Item -->
+      <!-- Item com desconto -->
       <div class="hover:scale-[102%] transition-all ease-in-out h-80 hover:cursor-pointer">
         <div class="relative h-80">
           <img class="object-cover h-full w-full max-w-full rounded-lg"
@@ -451,7 +449,7 @@
             class="absolute inset-0 bg-gradient-to-t from-zinc-800 via-transparent to-transparent rounded-lg hover:cursor-pointer">
           </div>
         </div>
-        <div class="relative -top-[300px] pl-3 pr-4 md:pl-5 flex flex-col gap-52 md:gap-44">
+        <div class="relative -top-[300px] pl-3 pr-4 md:pl-5 flex flex-col gap-44 md:gap-50">
           <p class="text-neutral-700 font-bold text-sm md:text-xl w-full text-wrap h-10">Chuteira Nike Mercurial Vapor
             15 Elite Campo
           </p>
@@ -462,9 +460,9 @@
           </div>
         </div>
       </div>
-      <!-- Item -->
+      <!-- Item com desconto -->
 
-      <!-- Item -->
+      <!-- Item com desconto -->
       <div class="hover:scale-[102%] transition-all ease-in-out h-80 hover:cursor-pointer">
         <div class="relative h-80">
           <img class="object-cover h-full w-full max-w-full rounded-lg"
@@ -473,7 +471,7 @@
             class="absolute inset-0 bg-gradient-to-t from-zinc-800 via-transparent to-transparent rounded-lg hover:cursor-pointer">
           </div>
         </div>
-        <div class="relative -top-[300px] pl-3 pr-4 md:pl-5 flex flex-col gap-52 md:gap-44">
+        <div class="relative -top-[300px] pl-3 pr-4 md:pl-5 flex flex-col gap-44 md:gap-44">
           <p class="text-neutral-700 font-bold text-sm md:text-xl w-full text-wrap h-10">Tênis Air Jordan 1 High OG
           </p>
           <div class="h-10 w-full">
@@ -483,7 +481,7 @@
           </div>
         </div>
       </div>
-      <!-- Item -->
+      <!-- Item com desconto -->
 
       <!-- Item Sem Desconto -->
       <div class="hover:scale-[102%] transition-all ease-in-out h-80 hover:cursor-pointer">
@@ -503,7 +501,26 @@
           </div>
         </div>
       </div>
-      <!-- Item -->
+      <!-- Item com desconto -->
+
+      <!-- Item Sem Desconto -->
+      <div class="md:hidden hover:scale-[102%] transition-all ease-in-out h-80 hover:cursor-pointer">
+        <div class="relative h-80">
+          <img class="object-cover h-full w-full max-w-full rounded-lg"
+            src="https://imgnike-a.akamaihd.net/768x768/022055BPA8.jpg" alt="">
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-zinc-800 via-transparent to-transparent rounded-lg hover:cursor-pointer">
+          </div>
+        </div>
+        <div class="relative -top-[300px] pl-3 pr-4 md:pl-5 flex flex-col gap-52 md:gap-50">
+          <p class="text-neutral-700 font-bold text-sm md:text-xl w-full text-wrap h-10">Tênis Nike Dunk High Feminino
+          </p>
+          <div class="h-10 w-full">
+            <p class="text-white font-bold md:text-xl md:-top-10">R$ 999,99</p>
+          </div>
+        </div>
+      </div>
+      <!-- Item com desconto -->
 
 
     </div>
@@ -547,7 +564,7 @@
 
   <!-- Footer -->
   <footer class="w-10/12 bg-white dark:bg-gray-900 mx-auto">
-    <div class="mx-auto w-full max-w-screen-xl">
+    <div class="md:px-24 mx-auto w-full max-w-screen-xl">
       <div class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
         <div>
           <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Sobre Nós</h2>
